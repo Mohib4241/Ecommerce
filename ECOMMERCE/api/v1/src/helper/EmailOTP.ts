@@ -1,6 +1,6 @@
 import * as nodemailer from 'nodemailer'
 import { GenerateOTP } from './GenerateOTP';
-import config from '../config/index';
+import config from '../config/config';
 import "dotenv/config"
 import path from 'path';
 

@@ -1,6 +1,6 @@
 import { postgreConnection } from "../utility/postgreConnection";
 import { NextFunction, Request , Response } from "express";
-import config from "../config";
+import config from "../config/config";
 import jwt from "jsonwebtoken";
 import { expression } from "joi";
 import { redis } from "src/utility/Redis";

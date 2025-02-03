@@ -1,5 +1,5 @@
 import pkg from 'pg'
-import config from '../config/index'
+import config from '../config/config'
 const  {Pool} = pkg
 
 

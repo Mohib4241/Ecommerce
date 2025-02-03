@@ -9,7 +9,6 @@ import path from "path";
 export async function createInvoice(orderId ,deliveryInfo ,userDetail ,product ,consumerName ,sellerj , paymentMethod)  {
 
     const data = {
-        apiKey: "ozOYCcTaAnOsvDoGu8JUEYzpvyOznqyzEq3eJbBBsWqNO25P18qyTReVtQ96G3xx",
         mode : "Production",
         images: {
             logo: "",

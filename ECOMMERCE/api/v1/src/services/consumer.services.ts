@@ -5,7 +5,7 @@ import { GenerateNewToken } from "../helper/GeneratToken.services";
 import { GenerateOTP } from "../helper/GenerateOTP";
 import { sendOtpToMobile } from "../helper/mobileOtp";
 import {createInvoice} from '../helper/invoice'
-import config from "../config";
+import config from "../config/config";
 import { jwt } from "twilio";
 
 declare global{

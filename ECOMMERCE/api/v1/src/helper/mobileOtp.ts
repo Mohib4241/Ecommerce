@@ -1,14 +1,12 @@
-import config from "../config/index.js"
+import config from "../config/config"
 import twilio from 'twilio'
 import { GenerateOTP } from "./GenerateOTP.js";
 
-// console.log(config.ACCOUNT_SID , config.AUTH_TOKEN); 
-
-// ACCOUNT_SID : process.env.ACCOUNT_SID || 'AC42eddedcd4216871c4dd55279124e826',
-// AUTH_TOKEN : process.env.AUTH_TOKEN || '50084d81a9cec713a6c4897dad497d59' ,  
+console.log(config.ACCOUNT_SID , config.AUTH_TOKEN); 
 
 
-const twilioClient = twilio('AC42eddedcd4216871c4dd55279124e826', '50084d81a9cec713a6c4897dad497d59');
+
+const twilioClient = twilio(config.ACCOUNT_SID, config.AUTH_TOKEN);
 
 export const sendOtpToMobile = async (mobileNumber : string , otp : number ) => {
     try {

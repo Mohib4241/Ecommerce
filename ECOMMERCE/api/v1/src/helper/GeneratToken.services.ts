@@ -1,5 +1,5 @@
 import jwt, { SignOptions } from "jsonwebtoken";
-import config from "../config/index";
+import config from "../config/config";
 import { postgreConnection } from "../utility/postgreConnection";
 import {redis} from '../utility/Redis'
 // import { string } from 'joi'

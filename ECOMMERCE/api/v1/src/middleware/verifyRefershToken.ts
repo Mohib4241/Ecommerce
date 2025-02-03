@@ -1,5 +1,5 @@
 import { postgreConnection } from "../utility/postgreConnection"
-import config from '../config/index'
+import config from '../config/config'
 import jwt from 'jsonwebtoken'
 import { Request , Response , NextFunction  } from "express"
 // import from "express";

@@ -1,5 +1,5 @@
 import express from 'express'
-import config from '../config/index'
+import config from '../config/config'
 import v1 from '../routes/index'
 
 
