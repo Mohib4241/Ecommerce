@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "typeRoots": ["node_modules/@types", "types"],
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@models/*" :["models/*"],
+      "src/*": ["./src/*"],
+      "*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
