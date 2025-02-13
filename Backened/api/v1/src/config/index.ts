@@ -1,9 +1,8 @@
 import "dotenv/config"
 
 
-
 export default {
-    PORT : Number(process.env.PORT)  ,
+    PORT : Number(process.env.PORT) || 8080 ,
     key : process.env.key,
     Username : process.env.username,
     host : process.env.host ,
